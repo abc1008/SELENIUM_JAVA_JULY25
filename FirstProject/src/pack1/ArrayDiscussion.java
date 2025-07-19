@@ -5,7 +5,9 @@ public class ArrayDiscussion {
 	
 	public static void main(String[] args) {
 		
-		int anyNum;
+		int anyNum = 0;
+		
+		System.out.println(anyNum);
 		
 		
 		int num = 10;
