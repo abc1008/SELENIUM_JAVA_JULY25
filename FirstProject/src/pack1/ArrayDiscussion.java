@@ -2,6 +2,12 @@ package pack1;
 
 public class ArrayDiscussion {
 
+	int num = 80;
+	
+	ArrayDiscussion()
+	{
+		
+	}
 	
 	public static void main(String[] args) {
 		

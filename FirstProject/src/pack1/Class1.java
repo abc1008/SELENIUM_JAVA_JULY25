@@ -99,6 +99,11 @@ public class Class1 {
 		c4.m4();
 		
 		
+		
+		
+		MethodCategories.EvenNumber(60);
+		
+		
 	}
 
 }
