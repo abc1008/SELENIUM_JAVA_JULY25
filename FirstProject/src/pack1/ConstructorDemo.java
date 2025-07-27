@@ -7,7 +7,7 @@ public class ConstructorDemo
 	boolean b = true;
 	
 
-	ConstructorDemo()
+	ConstructorDemo()  
 	{
 		System.out.println("0 arg ConstructorDemo");
 	}

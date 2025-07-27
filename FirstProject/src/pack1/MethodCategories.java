@@ -97,7 +97,7 @@ public class MethodCategories {
 		boolean isEven = EvenNumber(52);
 		System.out.println(isEven);
 		
-		EvenNumber2(60);
+		String result = EvenNumber2(60);
 
 	}
 

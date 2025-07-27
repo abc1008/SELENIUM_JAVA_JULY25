@@ -2,7 +2,7 @@ package pack1;
 
 public class LoopsDiscussion 
 {
-	int n= 0;
+	int n= 0;  
 	
 	
 	public static void main(String[] args) {
