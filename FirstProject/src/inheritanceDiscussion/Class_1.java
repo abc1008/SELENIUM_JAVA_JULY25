@@ -31,7 +31,7 @@ public class Class_1 extends MobileInheritance
 		
 		playGames();
 		
-		System.out.println(s1);
+		System.out.println(MobileInheritance.s1);
 		
 		
 		

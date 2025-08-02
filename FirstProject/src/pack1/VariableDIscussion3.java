@@ -1,5 +1,8 @@
 package pack1;
 
+import access_modifiers.ConstructorModifier;
+import access_modifiers.TestClass_1;
+
 public class VariableDIscussion3 
 {
 	int num = 50; // non-static 
@@ -36,6 +39,10 @@ public class VariableDIscussion3
 		
 		System.out.println(ref2.num2);
 		System.out.println(ref3.num2);
+		
+		
+
+		
 		
 	}
 	

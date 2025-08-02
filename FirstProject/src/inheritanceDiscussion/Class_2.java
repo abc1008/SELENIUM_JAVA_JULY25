@@ -5,6 +5,7 @@ public class Class_2 extends MobileInheritance{
 	static String s1 = "Test_2";
 	String companyName = "Redmi";
 	
+	
 	public void m2()
 	{
 		
@@ -18,6 +19,11 @@ public class Class_2 extends MobileInheritance{
 	
 	}
 	
+	
+	public void m1()
+	{
+		
+	}
 	
 	
 	public static void main(String[] args) {
@@ -40,6 +46,8 @@ public class Class_2 extends MobileInheritance{
 		System.out.println(mb.companyName);
 		
 		mb.browseOverInternet();
+		
+		System.out.println(MobileInheritance.s1);
 		
 		
 		

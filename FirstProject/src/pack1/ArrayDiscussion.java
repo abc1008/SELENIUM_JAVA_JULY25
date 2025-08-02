@@ -1,5 +1,6 @@
 package pack1;
 
+
 public class ArrayDiscussion {
 
 	int num = 80;
@@ -109,7 +110,6 @@ public class ArrayDiscussion {
 		String s3 = "353h&&&@@#$klmlk009";
 		
 	    String random = "ghhhh";
-		
 		
 		
 		

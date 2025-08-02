@@ -10,7 +10,7 @@ public class MobileInheritance
 	String color;
 	String companyName;
 	String model;
-	static String s1 = "Test";
+    static String s1 = "Test";
 	boolean sliderButton;
 	
 //	public MobileInheritance(int height,String companyName)
