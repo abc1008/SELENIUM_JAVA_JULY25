@@ -5,36 +5,21 @@ public class Class_A
 	
 	public void m1()
 	{
-		System.out.println("m1");
+		System.out.println("m1 - Class_A");
 	}
 	
-	public static void m1(int a)
+	public void m1(int a)
 	{
-		System.out.println("int m1");
+		System.out.println("int m1 - Class_A");
 	}
 	
 	
-	int m1(String a)
-	{
-		System.out.println("Class_A - String m1");
-		
-		return 1;
-	}
-	
-	protected int car(String a)
+	public static int m1(String a)
 	{
 		System.out.println("Class_A - String m1");
 		
 		return 1;
-		
 	}
-	
-	private void m1(byte a)
-	{
-		System.out.println("Class_A - byte m1");
-		
-	}
-	
 
 	
 	
