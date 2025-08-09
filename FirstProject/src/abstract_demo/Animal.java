@@ -13,5 +13,11 @@ public abstract class Animal
 	
 	
 	
+// Design animal hierarchy which has Dog, Cat, Tiger
+	
+//	add properties/attributes - variables
+//	add behavior - methods
+	
+	
 	
 }

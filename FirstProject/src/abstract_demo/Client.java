@@ -11,8 +11,8 @@ public class Client
 		animal1.run();
 		animal1.eat();
 		
-		
-		
+		Animal animal2 = new Tiger();
+		animal2.run();  // overiding
 	}
 	
 	

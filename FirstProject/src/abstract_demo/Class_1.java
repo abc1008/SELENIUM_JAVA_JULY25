@@ -2,6 +2,15 @@ package abstract_demo;
 
 public abstract class Class_1
 {
+	int num1 = 10;
+	static int num2 = 20;
+	
+	Class_1(int a)
+	{
+		System.out.println("Abstract class contructor");
+	}
+	
+	
 //	vague, unclear 
 	public abstract void m1();  // abstract method
 	
@@ -21,9 +30,20 @@ public abstract class Class_1
 		System.out.println("m5 static");
 	}
 	
+	public void m7()
+	{
+
+	}
+	
 	public static void main(String[] args)
 	{
 		m5();
+		
+		System.out.println(num2);
+		
+		
+//		Class_1 c1 = new Class_1();
+		
 	}
 	
 
