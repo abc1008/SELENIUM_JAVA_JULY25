@@ -2,9 +2,14 @@ package interface_demo;
 
 public interface Interface_1
 {
+	
+	int num1 = 100;
+	boolean result = false;   // public static final
+	
+	
 	// 100 % abstract methods
 	
-	public void m1();
+	void m1();   // by default public, abstract
 	
 	public void m2();
 	
@@ -19,6 +24,9 @@ public interface Interface_1
 	{
 		m4();
 		
+		
+		System.out.println(num1);
+		System.out.println(result);
 		
 		// Object : instance of class
 	}

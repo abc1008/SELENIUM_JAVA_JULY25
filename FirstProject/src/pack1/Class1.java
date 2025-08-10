@@ -1,6 +1,9 @@
 package pack1;
 
-public class Class1 {
+import inheritanceDiscussion.Class_2;
+
+public class Class1 extends Class_2 
+{
 
 	public static void multiplication() {
 		int w = 10;

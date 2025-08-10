@@ -21,8 +21,10 @@ public abstract class Class_A implements Interface_1
 		
 		
 		
+		Interface_1.m4();
 		
-		
+		System.out.println(num1);
+		System.out.println(result);
 		
 		
 		

@@ -1,5 +1,7 @@
 package interface_demo;
 
+import abstract_demo.Animal;
+
 public class Class_A2 extends Class_A
 {
 
@@ -43,6 +45,21 @@ public class Class_A2 extends Class_A
 		a4.m2();
 		a4.m3();
 		
+		
+		System.out.println();
+		System.out.println("*** Static Method in interface***");
+		System.out.println();
+		
+		
+		
+		Interface_1.m4();
+		
+		
+		System.out.println(num1);
+		System.out.println(result);
+		
+		
+//		System.out.println(Animal.num);
 		
 		
 	}

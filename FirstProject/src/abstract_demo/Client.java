@@ -7,8 +7,8 @@ public class Client
 	{
 		
 		Animal animal1 = new Dog();
-		
 		animal1.run();
+		
 		animal1.eat();
 		
 		Animal animal2 = new Tiger();
