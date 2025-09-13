@@ -1,6 +1,7 @@
 package testPack;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,6 +27,16 @@ public class PerformLogin {
 		WebElement textBoxPassword = driver.findElement(By.name("password"));
 		textBoxPassword.sendKeys("Unlock@456");
 		
+		
+//		TakeScreenshot   - interface which contains getScreenshotAs();
+		
+		
+//		 screen = (TakesScreenshot)driver;
+		
+		
+		
+		
+//		JavaScriptExecutor -  interface which contains executeScript;
 		
 
 		
