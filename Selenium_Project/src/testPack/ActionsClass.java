@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import utility.JSMethods;
+
 public class ActionsClass
 {
 	
@@ -29,6 +31,7 @@ public class ActionsClass
 		 Thread.sleep(2000);
 		 driver.findElement(By.xpath("//a[text()='Show AllMP3 Players']")).click();
 		
+		 
 	}
 
 }

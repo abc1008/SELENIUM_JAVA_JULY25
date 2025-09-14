@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import utility.JSMethods;
+
 public class CheckboxesNRadioButtons
 {
 	
@@ -25,12 +27,14 @@ public class CheckboxesNRadioButtons
 //		JavascriptExecutor
 		
 		
-//		WebElement demo = driver.findElement(By.xpath("//a[@name='demo']"));
+		WebElement demo = driver.findElement(By.xpath("//a[@name='demo']"));
 		
 //		JavascriptExecutor js = (JavascriptExecutor)driver;
 //		js.executeScript("arguments[0].scrollIntoView();", demo);
 		
 //							js command
+		
+		JSMethods.scroll(driver, demo);
 		
 		
 		Thread.sleep(3000);
