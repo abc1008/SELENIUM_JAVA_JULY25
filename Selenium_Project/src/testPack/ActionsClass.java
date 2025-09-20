@@ -14,7 +14,7 @@ public class ActionsClass
 	
 	public static void main(String[] args) throws InterruptedException
 	{
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver(); // EdgeDriver
 		driver.manage().window().maximize();
 		driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");
 		
