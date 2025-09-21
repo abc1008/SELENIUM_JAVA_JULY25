@@ -1,18 +1,29 @@
 package pack1;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.*;
 import org.testng.annotations.Test;
 
-public class Class_1
+public class Annotation1
 {
+	@BeforeClass
+	public void BeforeClass()
+	{
+		System.out.println("BeforeClass");
+	}
+	
+	@AfterClass
+	public void AfterClass()
+	{
+		System.out.println("AfterClass");
+	}
+	
 	@Test(priority = 1)
 	public void xestCase1()
 	{
 		System.out.println("testCase1");
 	}
 	
-	@Test(priority = -3, invocationCount = -5)
+	@Test(priority = -3)
 	public void testCase2()
 	{
 		System.out.println("testCase2");

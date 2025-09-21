@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-20T11:26:04 IST" name="Default suite" finished-at="2025-09-20T11:26:04 IST" duration-ms="91">
+  <suite started-at="2025-09-21T11:26:27 IST" name="Default suite" finished-at="2025-09-21T11:26:31 IST" duration-ms="4567">
     <groups>
     </groups>
-    <test started-at="2025-09-20T11:26:04 IST" name="Default test" finished-at="2025-09-20T11:26:04 IST" duration-ms="91">
-      <class name="pack1.Class_1">
-        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:pack1.Class_1@77847718]" started-at="2025-09-20T11:26:04 IST" name="BeforeMethod" finished-at="2025-09-20T11:26:04 IST" duration-ms="8" status="PASS">
+    <test started-at="2025-09-21T11:26:27 IST" name="Default test" finished-at="2025-09-21T11:26:31 IST" duration-ms="4567">
+      <class name="pack1.OrangeHrmLogin_TestNg">
+        <test-method is-config="true" signature="initTest()[pri:0, instance:pack1.OrangeHrmLogin_TestNg@3bf7ca37]" started-at="2025-09-21T11:26:19 IST" name="initTest" finished-at="2025-09-21T11:26:27 IST" duration-ms="7960" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method signature="xestCase1()[pri:1, instance:pack1.Class_1@77847718]" started-at="2025-09-20T11:26:04 IST" name="xestCase1" finished-at="2025-09-20T11:26:04 IST" duration-ms="10" status="PASS">
+        </test-method> <!-- initTest -->
+        <test-method signature="loginTest()[pri:0, instance:pack1.OrangeHrmLogin_TestNg@3bf7ca37]" started-at="2025-09-21T11:26:27 IST" name="loginTest" finished-at="2025-09-21T11:26:31 IST" duration-ms="4009" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- xestCase1 -->
-        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:pack1.Class_1@77847718]" started-at="2025-09-20T11:26:04 IST" name="AfterMethod" finished-at="2025-09-20T11:26:04 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pack1.OrangeHrmLogin_TestNg@3bf7ca37]" started-at="2025-09-21T11:26:31 IST" name="tearDown" finished-at="2025-09-21T11:26:31 IST" duration-ms="444" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AfterMethod -->
-        <test-method signature="cestCase3()[pri:2, instance:pack1.Class_1@77847718]" started-at="2025-09-20T11:26:04 IST" name="cestCase3" finished-at="2025-09-20T11:26:04 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cestCase3 -->
-        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:pack1.Class_1@77847718]" started-at="2025-09-20T11:26:04 IST" name="BeforeMethod" finished-at="2025-09-20T11:26:04 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeMethod -->
-        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:pack1.Class_1@77847718]" started-at="2025-09-20T11:26:04 IST" name="AfterMethod" finished-at="2025-09-20T11:26:04 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AfterMethod -->
-      </class> <!-- pack1.Class_1 -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- pack1.OrangeHrmLogin_TestNg -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
