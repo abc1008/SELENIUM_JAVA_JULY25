@@ -28,7 +28,7 @@ public class ActionsClass2
 		driver.get(url);
 		Thread.sleep(3000);
 		
-		 WebElement rightClickButton = driver.findElement(By.xpath("//span[text()='right click me']"));
+		WebElement rightClickButton = driver.findElement(By.xpath("//span[text()='right click me']"));
 		 
 		 Actions act = new Actions(driver);
 		 act.contextClick(rightClickButton).build().perform();

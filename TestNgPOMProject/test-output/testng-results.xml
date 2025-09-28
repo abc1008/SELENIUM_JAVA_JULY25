@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-28T11:39:32 IST" name="Default suite" finished-at="2025-09-28T11:39:38 IST" duration-ms="5713">
+    <groups>
+    </groups>
+    <test started-at="2025-09-28T11:39:32 IST" name="Default test" finished-at="2025-09-28T11:39:38 IST" duration-ms="5713">
+      <class name="testSuites.LoginTestSuite">
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:testSuites.LoginTestSuite@7c6908d7]" started-at="2025-09-28T11:39:25 IST" name="testSetUp" finished-at="2025-09-28T11:39:32 IST" duration-ms="6980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method signature="tc_123_LoginTest()[pri:0, instance:testSuites.LoginTestSuite@7c6908d7]" started-at="2025-09-28T11:39:32 IST" name="tc_123_LoginTest" finished-at="2025-09-28T11:39:38 IST" duration-ms="5679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_123_LoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSuites.LoginTestSuite@7c6908d7]" started-at="2025-09-28T11:39:38 IST" name="tearDown" finished-at="2025-09-28T11:39:38 IST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testSuites.LoginTestSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -2,7 +2,6 @@ package pack1;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 public class Assertions
 {
@@ -13,9 +12,7 @@ public class Assertions
 		boolean actualAesult = true;
 		System.out.println("testCase1");
 		
-		
 		String expectedText = "test";
-		
 		String textFromUI = "test";
 		
 		if(expectedText.equals(textFromUI))
