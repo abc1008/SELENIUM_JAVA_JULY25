@@ -1,5 +1,4 @@
 package pack1;
-
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -16,16 +15,12 @@ public class ListenerClass implements ITestListener {
 	public void onTestSuccess(ITestResult result) {
 		
 		System.out.println("Listener - onTestSuccess");
-
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		
 		System.out.println("Listener - onTestFailure");
-		
-		
-		
 	}
 
 	@Override
@@ -37,7 +32,6 @@ public class ListenerClass implements ITestListener {
 	public void onStart(ITestContext context) {
 		
 		System.out.println("Listener - onStart");
-
 	}
 
 	@Override
