@@ -2,61 +2,30 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-04T11:15:09 IST" name="Default suite" finished-at="2025-10-04T11:15:25 IST" duration-ms="15755">
+  <suite started-at="2025-10-05T11:49:30 IST" name="Default suite" finished-at="2025-10-05T11:49:58 IST" duration-ms="28619">
     <groups>
     </groups>
-    <test started-at="2025-10-04T11:15:09 IST" name="Default test" finished-at="2025-10-04T11:15:25 IST" duration-ms="15755">
+    <test started-at="2025-10-05T11:49:30 IST" name="Default test" finished-at="2025-10-05T11:49:58 IST" duration-ms="28619">
       <class name="testSuites.HeaderTestSuite">
-        <test-method is-config="true" signature="testSetUp()[pri:0, instance:testSuites.HeaderTestSuite@302552ec]" started-at="2025-10-04T11:15:05 IST" name="testSetUp" finished-at="2025-10-04T11:15:09 IST" duration-ms="4573" status="PASS">
+        <test-method is-config="true" signature="testSetUp()[pri:0, instance:testSuites.HeaderTestSuite@7a8c8dcf]" started-at="2025-10-05T11:49:24 IST" name="testSetUp" finished-at="2025-10-05T11:49:30 IST" duration-ms="5361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetUp -->
-        <test-method is-config="true" signature="login()[pri:0, instance:testSuites.HeaderTestSuite@302552ec]" started-at="2025-10-04T11:15:09 IST" name="login" finished-at="2025-10-04T11:15:13 IST" duration-ms="3567" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:testSuites.HeaderTestSuite@7a8c8dcf]" started-at="2025-10-05T11:49:30 IST" name="login" finished-at="2025-10-05T11:49:33 IST" duration-ms="3846" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="tc_123_ChangePasswordTest()[pri:0, instance:testSuites.HeaderTestSuite@302552ec]" started-at="2025-10-04T11:15:13 IST" name="tc_123_ChangePasswordTest" finished-at="2025-10-04T11:15:24 IST" duration-ms="11456" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="tc_123_ChangePasswordTest()[pri:0, instance:testSuites.HeaderTestSuite@7a8c8dcf]" started-at="2025-10-05T11:49:33 IST" name="tc_123_ChangePasswordTest" finished-at="2025-10-05T11:49:56 IST" duration-ms="22400" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='jconfirm-titl']"}
-  (Session info: chrome=140.0.7339.208)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1cdbde0b72309c625c7e6123bb3d3e56, findElement {using=xpath, value=//span[@class='jconfirm-titl']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49681}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49681/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1cdbde0b72309c625c7e6123bb3d3e56]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='jconfirm-titl']"}
-  (Session info: chrome=140.0.7339.208)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1cdbde0b72309c625c7e6123bb3d3e56, findElement {using=xpath, value=//span[@class='jconfirm-titl']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49681}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49681/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1cdbde0b72309c625c7e6123bb3d3e56
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
-at pageClasses.HeaderPage.changePassword(HeaderPage.java:100)
-at testScriptClasses.HeaderTestScript.performChangePassword(HeaderTestScript.java:24)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
 at testSuites.HeaderTestSuite.tc_123_ChangePasswordTest(HeaderTestSuite.java:24)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -86,15 +55,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_123_ChangePasswordTest -->
-        <test-method is-config="true" signature="tc_123_LogoutTest()[pri:0, instance:testSuites.HeaderTestSuite@302552ec]" started-at="2025-10-04T11:15:25 IST" name="tc_123_LogoutTest" finished-at="2025-10-04T11:15:25 IST" duration-ms="659" status="PASS">
+        <test-method is-config="true" signature="tc_123_LogoutTest()[pri:0, instance:testSuites.HeaderTestSuite@7a8c8dcf]" started-at="2025-10-05T11:49:56 IST" name="tc_123_LogoutTest" finished-at="2025-10-05T11:49:58 IST" duration-ms="2293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_123_LogoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSuites.HeaderTestSuite@302552ec]" started-at="2025-10-04T11:15:25 IST" name="tearDown" finished-at="2025-10-04T11:15:26 IST" duration-ms="310" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testSuites.HeaderTestSuite@7a8c8dcf]" started-at="2025-10-05T11:49:58 IST" name="tearDown" finished-at="2025-10-05T11:49:59 IST" duration-ms="507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
