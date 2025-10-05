@@ -1,7 +1,8 @@
 package pageClasses;
 
 import java.io.IOException;
-import java.util.NoSuchElementException;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import utility.CommonMethods;
 import utility.ExplicitWait;
+import utility.ExtentReportHelper;
 
 public class HeaderPage 
 {
@@ -48,7 +50,7 @@ public class HeaderPage
 	private WebElement buttonUpdate;	
 	
 	@FindBy(xpath = popupSuccessXpath)
-	private WebElement popupSuccess;	
+	private List<WebElement> popupSuccess;	
 
 	
 	@FindBy(xpath = buttonProfileXpath)
@@ -68,21 +70,22 @@ public class HeaderPage
 		try 
 		{
 			buttonProfileIcon.click();
+			System.out.println("Cliked on profile icon");
 			buttonLogout.click();
 			ExplicitWait.waitUntilElementVisible(driver, buttonLogin);
 			
 			if(buttonLogin.isDisplayed())
 			{
-				System.out.println("Logout Successful");
+				ExtentReportHelper.logPass("Logout Successful");
 			}
 			else
 			{
-				System.out.println("Logout Failed");
+				ExtentReportHelper.logFail("Logout Failed");
 			}
 		} 
 		catch (Exception ex) 
 		{
-			System.out.println("Excepton in method 'logout' : "+ ex.getMessage());
+			ExtentReportHelper.logFail("Excepton in method 'logout' : "+ ex.getMessage());
 		}
 		
 	}
@@ -95,39 +98,39 @@ public class HeaderPage
 		{
 			selectOptionFromProfileIcon("Change Password");
 			ExplicitWait.waitUntilElementVisible(driver, textBoxPassword);
-			
 			textBoxPassword.sendKeys(CommonMethods.readConfigData("Password"));
 			textBoxConfPassword.sendKeys(CommonMethods.readConfigData("Password"));
-			
+			ExtentReportHelper.logInfo("Entered password and confirm password on Change Password popup.");
 			buttonUpdate.click();
+			ExtentReportHelper.logInfo("Clicked on Update button");
 			
-			if(popupSuccess.isDisplayed())
+			if(popupSuccess.size() > 0)
 			{
-				System.out.println("Password Changed Successfully");
+				ExtentReportHelper.logPass("Password Changed Successfully");
 			}
 			else
 			{
-				System.out.println("Password Changed Failed");
+				ExtentReportHelper.logFail("Password Change Failed");
 				testResult = false;
 			}
 			
-			ExplicitWait.waitUntilElementInVisible(driver, popupSuccess);
+			ExplicitWait.waitUntilElementInVisible(driver, popupSuccess.get(0));
 		}
 		catch(Exception ex)
 		{
-			System.out.println("Excepton in method 'changePassword' : "+ ex.getMessage());
+			ExtentReportHelper.logFail("Excepton in method 'changePassword' : "+ ex.getMessage());
 		}
 		
 		return testResult;
 	}
 	
 	
-	public void selectOptionFromProfileIcon(String option)
+	public void selectOptionFromProfileIcon(String option) throws IOException
 	{
 		
 		try
 		{
-			System.out.println("Selecting option '"+ option +"' from Profile icon");
+			ExtentReportHelper.logInfo("Selecting option '"+ option +"' from Profile icon");
 			
 			buttonProfileIcon.click();
 			
@@ -146,7 +149,7 @@ public class HeaderPage
 		} 
 		catch (Exception ex) 
 		{
-			System.out.println("Excepton in method 'selectOptionFromProfileIcon' : "+ ex.getMessage());
+			ExtentReportHelper.logFail("Excepton in method 'selectOptionFromProfileIcon' : "+ ex.getMessage());
 		}
 			
 	}

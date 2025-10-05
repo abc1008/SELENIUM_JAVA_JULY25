@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import pageClasses.HeaderPage;
 import testSuites.HeaderTestSuite;
+import utility.ExtentReportHelper;
 
 public class HeaderTestScript extends HeaderTestSuite {
 	
@@ -19,13 +20,19 @@ public class HeaderTestScript extends HeaderTestSuite {
 		
 		boolean testResult = false;
 		
+		ExtentReportHelper.logInfo("performChangePassword method");
+		
 		HeaderPage headerPage = new HeaderPage(driver);
 		
 		if(headerPage.changePassword() == true)
 		{
+			ExtentReportHelper.logPass("Password Changed Successfully.");
 			testResult = true;
 		}
-		
+		else
+		{
+			ExtentReportHelper.logFail("Password Change Failed.");
+		}
 		
 		return testResult;
 	}

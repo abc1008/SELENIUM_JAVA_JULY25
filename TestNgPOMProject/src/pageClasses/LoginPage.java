@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import utility.CommonMethods;
 import utility.ExplicitWait;
+import utility.ExtentReportHelper;
 
 public class LoginPage {
 	// private variables
@@ -42,21 +43,28 @@ public class LoginPage {
 	// methods
 	public void login() throws InterruptedException, IOException
 	{
-		textBoxUserName.sendKeys(CommonMethods.readConfigData("UserId"));
-		textBoxPassword.sendKeys(CommonMethods.readConfigData("Password"));
+		String userId = CommonMethods.readConfigData("UserId");
+		String password  = CommonMethods.readConfigData("Password");
+		
+		textBoxUserName.sendKeys(userId);
+		ExtentReportHelper.logInfo("Entered user id : "+userId);
+		
+		textBoxPassword.sendKeys(password);
+		ExtentReportHelper.logInfo("Entered password : "+password);
+		
 		buttonLogin.click();
+		ExtentReportHelper.logInfo("Clicked on login button");
 		
 		ExplicitWait.waitUntilElementVisible(driver, buttonDashboard);
 		
 		
 		if(buttonDashboard.isDisplayed())
 		{
-			System.out.println("Login Successful");
+			ExtentReportHelper.logPass("Login Successful");
 		}
 		else
 		{
-			System.out.println("Login Failed");
+			ExtentReportHelper.logFail("Login Failed");
 		}
-		
 	}
 }

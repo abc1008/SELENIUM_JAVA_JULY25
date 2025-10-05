@@ -14,6 +14,7 @@ import org.testng.annotations.BeforeSuite;
 import testScriptClasses.HeaderTestScript;
 import testScriptClasses.LoginTestScipt;
 import utility.CommonMethods;
+import utility.ExtentReportHelper;
 
 public class BaseClass 
 {
@@ -46,11 +47,13 @@ public class BaseClass
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		driver.get(CommonMethods.readConfigData("TestSiteUrl"));
+		ExtentReportHelper extentReportHelper = new ExtentReportHelper();
 	}
 	
 	@BeforeMethod
 	public void login() throws InterruptedException, IOException
 	{
+		ExtentReportHelper.startTest("Test Case 1");
 		LoginTestScipt loginTestScipt = new LoginTestScipt();
 		loginTestScipt.performLogin();
 	}
@@ -61,6 +64,7 @@ public class BaseClass
 	{
 		HeaderTestScript headerTestScript = new HeaderTestScript();
 		headerTestScript.performLogout();
+		ExtentReportHelper.endTest();  // report generate
 	}
 	
 	@AfterSuite
