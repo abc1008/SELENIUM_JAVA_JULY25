@@ -14,19 +14,20 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.model.Media;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-import basePack.BaseClass;
 
-public class ExtentReportHelper extends BaseClass
+public class ExtentReportHelper
 {
 	static ExtentReports extentReport;
 	static ExtentTest testCase; // null
+	static WebDriver driver;
 	
-	public ExtentReportHelper()
+	public ExtentReportHelper(WebDriver driver, String dateTimeStamp)
 	{
 		extentReport = new ExtentReports();
-		String path = "D:\\TRAININGS\\TRAININGS\\Selenium_JAVA_JULY25_WEEKEND\\Reports\\testReport3.html";
+		String path = "D:\\TRAININGS\\TRAININGS\\Selenium_JAVA_JULY25_WEEKEND\\Reports\\TestReport_"+dateTimeStamp+".html";
 		ExtentSparkReporter extentSparkReporter  = new ExtentSparkReporter(path);
 		extentReport.attachReporter(extentSparkReporter);
+		this.driver = driver;
 	}
 	
 	
